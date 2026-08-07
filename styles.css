@@ -1,0 +1,174 @@
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #787878;
+  --line: rgba(20, 20, 20, 0.12);
+  --placeholder: #dedbd5;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: -0.018em;
+}
+
+a { color: inherit; }
+
+.page-shell {
+  width: min(100% - 48px, 920px);
+  margin: 0 auto;
+  padding: 64px 0 96px;
+}
+
+.profile { width: 100%; }
+
+.portrait-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 330px;
+  max-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, transparent 49.6%, rgba(20,20,20,.12) 49.8%, rgba(20,20,20,.12) 50.2%, transparent 50.4%),
+    linear-gradient(45deg, transparent 49.6%, rgba(20,20,20,.12) 49.8%, rgba(20,20,20,.12) 50.2%, transparent 50.4%),
+    var(--placeholder);
+  border-radius: 2px;
+  color: rgba(20,20,20,.5);
+  user-select: none;
+}
+
+.portrait-placeholder span {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .16em;
+}
+
+.portrait-placeholder small {
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+
+.identity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(29px, 3vw, 38px);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials a {
+  width: 31px;
+  height: 31px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  transition: transform .15s ease, background .15s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-1px);
+  background: rgba(20,20,20,.05);
+}
+
+.copy {
+  width: min(100%, 710px);
+  margin-top: 78px;
+}
+
+.copy p {
+  margin: 0 0 28px;
+}
+
+.copy .hello {
+  margin-bottom: 28px;
+}
+
+.copy .signoff {
+  margin-top: 54px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .page-shell {
+    width: min(100% - 32px, 920px);
+    padding-top: 24px;
+    padding-bottom: 64px;
+  }
+
+  .portrait-placeholder {
+    aspect-ratio: 4 / 5;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .identity-row {
+    align-items: flex-start;
+    margin-top: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .copy {
+    margin-top: 58px;
+  }
+
+  .copy p {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 430px) {
+  .identity-row {
+    gap: 12px;
+  }
+
+  .socials {
+    gap: 7px;
+  }
+
+  .socials a {
+    width: 29px;
+    height: 29px;
+  }
+}
