@@ -4,6 +4,7 @@
   --muted: #787878;
   --line: rgba(20, 20, 20, 0.12);
   --placeholder: #dedbd5;
+  --link-hover: #3b82f6;
 }
 
 * { box-sizing: border-box; }
@@ -115,6 +116,23 @@ h1 {
 
 .copy .hello {
   margin-bottom: 28px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 2px;
+}
+
+.project-links a {
+  text-decoration: none;
+  transition: color .18s ease;
+}
+
+.project-links a:hover,
+.project-links a:focus-visible {
+  color: var(--link-hover);
 }
 
 .copy .signoff {
