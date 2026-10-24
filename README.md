@@ -1,27 +1,11 @@
-# Minimal Personal Homepage
+# ryanmhopkins.com
 
-A clean, responsive personal-site template inspired by the visual structure of mjboswell.com, with original placeholder copy and no copied imagery or branding.
+Personal homepage for ryan hopkins. Static HTML and CSS, served by GitHub Pages at the custom domain in `CNAME`.
 
 ## Edit
 
-- Change `Your Name` in `index.html`.
-- Replace the three `href="#"` social links.
-- Replace the `.portrait-placeholder` block with an image, for example:
-
-```html
-<img class="portrait" src="portrait.jpg" alt="Portrait of Your Name">
-```
-
-Then add this to `styles.css`:
-
-```css
-.portrait {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-```
+- Page copy and product links live in `index.html`.
+- Styles live in `styles.css`.
 
 ## Run
 
