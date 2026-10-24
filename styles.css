@@ -118,61 +118,21 @@ h1 {
   margin-bottom: 28px;
 }
 
-.products {
-  margin-top: 8px;
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 2px;
 }
 
-.products h2 {
-  margin: 0 0 6px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #8f8f8f;
-}
-
-.product-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.product-list a {
-  display: grid;
-  grid-template-columns: minmax(9.5rem, 11.75rem) minmax(0, 1fr);
-  column-gap: 28px;
-  row-gap: 4px;
-  align-items: baseline;
-  padding: 16px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+.project-links a {
   text-decoration: none;
   transition: color .18s ease;
 }
 
-.product-list li:last-child a {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-.product-name {
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
-
-.product-blurb {
-  color: #b5b5b5;
-  font-size: 16px;
-  line-height: 1.45;
-}
-
-.product-list a:hover .product-name,
-.product-list a:focus-visible .product-name {
+.project-links a:hover,
+.project-links a:focus-visible {
   color: var(--link-hover);
-}
-
-.product-list a:focus-visible {
-  outline: 2px solid var(--link-hover);
-  outline-offset: 3px;
 }
 
 .copy .signoff {
@@ -213,20 +173,6 @@ h1 {
 
   .copy p {
     margin-bottom: 24px;
-  }
-
-  .product-list a {
-    grid-template-columns: 1fr;
-    row-gap: 2px;
-    padding: 14px 0;
-  }
-
-  .product-name {
-    font-size: 17px;
-  }
-
-  .product-blurb {
-    font-size: 15px;
   }
 }
 
