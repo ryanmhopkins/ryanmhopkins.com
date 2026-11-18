@@ -190,3 +190,15 @@ h1 {
     height: 29px;
   }
 }
+
+.article-shell { max-width: 760px; }
+.article-shell nav { margin-bottom: 56px; }
+.article-shell h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.12; }
+.article-shell h2 { font-size: 24px; font-weight: 500; line-height: 1.25; margin-top: 42px; }
+.article-shell p, .article-shell li { line-height: 1.7; color: #c7c7c7; }
+.article-shell li { margin-bottom: 16px; }
+.article-shell a { text-underline-offset: 4px; }
+.article-shell .article-meta { color: #999; font-size: 14px; }
+.article-shell .article-lede { font-size: 22px; color: #fff; }
+.article-cta { margin-top: 40px; }
+.article-shell a:focus-visible { outline: 2px solid #6b9fff; outline-offset: 4px; }
